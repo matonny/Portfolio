@@ -1,0 +1,234 @@
+body{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 
+}
+.header{
+	width:100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    padding: 0;
+    transition: 0.2s;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.header__container{
+    display: flex;
+    max-width: 1000px;
+    margin:0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.header__title__link{
+	color:white;
+	text-decoration: none;
+	font-weight: normal;
+	transition: 0.2s;
+}
+.header__list {
+	display: flex;
+    flex-direction: column;
+}
+.header__open-menu {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    height: 32px;
+    width: 32px;
+    background: url("images/nav-icon.png") transparent;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 0;
+    color: transparent;
+}
+.header__open-menu:focus{
+	outline-color:#FDD835;
+}
+.header__nav {
+    transition: height 0.5s ease-in-out;
+    overflow: hidden;
+    align-self: flex-start;
+    margin-left: 50%;
+    transform: translateX(-38px);
+}
+.header__open-menu[aria-expanded="true"] + .header__nav {
+    height: 140px;
+}
+.header__open-menu[aria-expanded="false"] + .header__nav {
+    height: 0;
+    visibility: hidden;
+}
+.header__list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.header__item{
+    display: inline-block;
+}
+.header__link{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    display: inline-block;
+    padding: 5px 0;
+}
+.header__link:hover, .header__title__link:hover{
+    color:#FDD835;
+}
+.home{
+	min-height: 100vh;
+	background-color:black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.home__title{
+	text-align: center;
+	color:#fff;
+	font-size:60px;
+}
+.home__link{
+	text-decoration: none;
+}
+.home__subtitle{
+	color:#FDD835;
+	font-size:30px;
+}
+.about{
+	background-color:#FDD835;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.about__title{
+	margin:0;
+	padding:30px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 60px;
+	position: relative;
+}
+.about__title:before{
+	content:'';
+	bottom:60px;
+	width:30vw;
+	height: 0px;
+	position: absolute;
+	right:100%;
+	margin-right: 15px;
+	border:1px solid black;
+}
+.about__title:after{
+	content:'';
+	bottom:60px;
+	width:30vw;
+	height: 0px;
+	position: absolute;
+	left:100%;
+	margin-left: 15px;
+	border:1px solid black;
+}
+.about__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 1000px;
+	width:100%;
+	margin:0 auto;
+}
+.about__photo{
+	max-width: 90%;
+	width:480px;
+	padding:10px;
+}
+.about__text{
+	color:white;
+	font-size: 20px;
+	margin:0;
+	padding:15px;
+	box-sizing: border-box;
+	max-width: 500px;
+	width:100%;
+}
+.skills{
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.skills__title{
+	margin:0;
+	padding:30px 0;
+	color:#FDD835;
+	text-transform: uppercase;
+	line-height: 60px;
+	position: relative;
+}
+.skills__title:before{
+	content:'';
+	bottom:60px;
+	width:20vw;
+	height: 0px;
+	position: absolute;
+	right:100%;
+	margin-right: 15px;
+	border:1px solid #FDD835;
+}
+.skills__title:after{
+	content:'';
+	bottom:60px;
+	width:20vw;
+	height: 0px;
+	position: absolute;
+	left:100%;
+	margin-left: 15px;
+	border:1px solid #FDD835;
+}
+@media (min-width: 768px){
+	body{
+		background-color:white;
+	}
+	.header__container {
+        flex-direction: row;
+        padding: 0 20px;
+    }
+    .header__list {
+        flex-direction: row;
+    }
+    .header__open-menu {
+        display: none;
+    }
+    .header__open-menu[aria-expanded="true"] + .header__nav,
+    .header__open-menu[aria-expanded="false"] + .header__nav {
+        visibility: visible;
+        height:auto;
+    }
+    .header__list__link {
+        padding: 5px;
+    }
+    .header__nav {
+        align-self: initial;
+        margin-left: 0;
+        transform: none;
+    }
+    .header__item{
+    	margin:0 10px;
+    }
+    .about__content{
+    	flex-direction: row;
+    }
+    .skills__title:before{
+    	width:30vw;
+    }
+    .skills__title:after{
+    	width:30vw;
+    }
+}

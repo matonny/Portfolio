@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Wygonny</title>
+    <meta charset='utf-8'>
+    <link 
+    href='style.css' 
+    rel='stylesheet'>
+    <link 
+    href='https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css'
+    rel='stylesheet'>
+    <link 
+    href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" 
+    rel="stylesheet">
+</head>
+
+<body>
+    <header class='header'>
+        <div class='header__container'>
+            <h1 class='header__title'>
+                <a href='#' class='header__title__link'>matonny</a>
+            </h1>
+            <button class='header__open-menu js-open-menu'
+                type='button'
+                id='open-menu-button'
+                aria-haspopup='true'
+                aria-expanded='false'
+                aria-controls='navigation-menu'
+                aria-label='Open menu'></button>
+            <nav class='header__nav' id='navigation-menu'>
+                <ul class='header__list'>
+                    <li class='header__item'>
+                        <a href='#home' class='header__link'>
+                            Home
+                        </a>
+                    </li>
+                    <li class='header__item'>
+                        <a href='#about' class='header__link'>
+                            About me
+                        </a>
+                    </li>
+                    <li class='header__item'>
+                        <a href='#' class='header__link'>
+                            Skills
+                        </a>
+                    </li>
+                    <li class='header__item'>
+                        <a href='#' class='header__link'>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class='home' id='home'>
+        <h2 class='home__title'>
+        Mateusz Wygonny
+        </h2>
+        <a href='#about' class='home__link'>
+            <h3 class='home__subtitle'>
+                Junior Front-End Developer
+            </h3>
+        </a>
+    </section>
+    <section class='about' id='about'>
+            <h2 class='about__title'>
+                Who am I?
+            </h2>
+            <div class='about__content'>
+                <img class='about__photo' src='images/myphoto.jpg' alt='Photo of me'>
+                <p class='about__text'>
+                    tekst :)   
+                </p>
+            </div>
+    </section>
+    <section class='skills' id='skills'>
+            <h2 class='skills__title'>
+                What are my skills?
+            </h2>
+            <div class='skills__container'>
+                
+            </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='javascript.js'></script>
+</body>
+
+</html>
+
