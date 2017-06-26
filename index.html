@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mateusz Wygonny</title>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Wygonny</title>      
+    <link rel='icon' type='image/ico' href='images/favicon.ico'>
     <link 
     href='style.css' 
     rel='stylesheet'>
@@ -46,7 +47,12 @@
                         </a>
                     </li>
                     <li class='header__item'>
-                        <a href='#' class='header__link'>
+                        <a href='#projects' class='header__link'>
+                            Projects
+                        </a>
+                    </li>
+                    <li class='header__item'>
+                        <a href='#contact' class='header__link'>
                             Contact
                         </a>
                     </li>
@@ -66,18 +72,18 @@
     </section>
     <section class='about' id='about'>
             <h2 class='about__title'>
-                Who am I?
+                <span class='about__title__span'>Who am I?</span>
             </h2>
             <div class='about__content'>
                 <img class='about__photo' src='images/myphoto.jpg' alt='Photo of me'>
                 <p class='about__text'>
-                    tekst :)   
+                    My name is Mateusz and currently im 17 years old student of High School No. 3 in Gdansk and in the next year I am going to participate in the International Baccalaureate Diploma Programme. I wrote my first lines of code when I was 12 but I started to program constantly only a year ago. I want to be a front-end developer because of the freedom that coding gives. I am an ambitious person that seeks new challanges and enjoys dealing with them. Working within a group is not a problem for me, just like getting things done on my own. In my spare time I like to play video games, read books and learn interesting things every day! 
                 </p>
             </div>
     </section>
     <section class='skills' id='skills'>
             <h2 class='skills__title'>
-                What are my skills?
+                <span class='skills__title__span'>What are my skills?</span>
             </h2>
             <div class='skills__container'>
                 <ul class='skills__list'>
@@ -102,6 +108,70 @@
                 </p>
             </div>
     </section>
+    <section class='projects' id='projects'>
+        <h2 class='projects__title'>
+            <span class='projects__title__span'>
+                My projects
+            </span>
+        </h2>
+        <ul class='projects__list'>
+            <li class='projects__example'>
+                <a href='https://matonny.github.io/MUN2017/'>
+                    <img class='projects__example__photo' src='images/project-example1.jpg' alt=''>
+                </a>
+                <div class='projects__example__text'>
+                    <h3 class='projects__example__title'>
+                        GDNMUN
+                    </h3>
+                    <p class='projects__example__description'>
+                        Website created for my schoolmates that are organising MUN this year. It's my first website made for other people and my first experience in coding for "clients". While making this project I used HTML, CSS, JS and some jQuery but mainly I trained using BEM. Although, I was using it in my previous projects, or to be honest I thought I was using it, I think that this website is the first case when my BEM is at least partially correct. I also learned how to make sites compatible with Facebook's and Google's features.
+                    </p>
+                </div>
+            </li>
+            <li class='projects__example reverse'>
+                <a href='https://matonny.github.io/Macankumbang/'>
+                    <img class='projects__example__photo' src='images/project-example2.jpg' alt=''>
+                </a>
+                <div class='projects__example__text'>
+                    <h3 class='projects__example__title'>
+                        Random website
+                    </h3>
+                    <p class='projects__example__description'>
+                        An ordinary .psd to HTML exercise. First responsive website that works well. Again, created with HTML, CSS, JS and jQuery. More pages like this are on my github account where you can see the progress that I make. 
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class='contact' id='contact'>
+        <h2 class='contact__title'>
+           <span class='contact__title__span'>Contact me!</span>
+        </h2>
+        <div class='contact__content'>
+            <h3 class='contact__subtitle'>You can find me on:</h3>
+            <ul class='contact__list'>
+                <li class='contact__item'>
+                    <a href='https://www.facebook.com/kaktus.pustynny' class='contact__link'>
+                        <svg class='contact__icon' viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+                    </a>                       
+                </li>
+                <li class='contact__item'>
+                    <a href='https://github.com/matonny' class='contact__link'>
+                        <svg class='contact__icon' viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.09-.202-.36-1.015.07-2.117 0 0 .67-.215 2.2.82.64-.178 1.32-.266 2-.27.68.004 1.36.092 2 .27 1.52-1.035 2.19-.82 2.19-.82.43 1.102.16 1.915.08 2.117.51.56.82 1.274.82 2.147 0 3.073-1.87 3.75-3.65 3.947.28.24.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.14.46.55.38C13.71 14.53 16 11.53 16 8c0-4.418-3.582-8-8-8"/></svg>   
+                </li>
+                <li class='contact__item'>
+                    <a href='https://www.linkedin.com/in/matonny' class='contact__link'>
+                        <svg class='contact__icon' viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class='footer'>
+        <p class='footer__sign'>
+            created with love by matonny
+        </p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='javascript.js'></script>
 </body>
