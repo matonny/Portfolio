@@ -221,6 +221,7 @@ body{
 }
 .skills__description{
 	margin:15px;
+	font-size:24px;
 }
 .skills__item:hover{
 	fill:#FDD835;
@@ -231,7 +232,7 @@ body{
 	flex-direction: column;
 	align-items: center;
 }
-.projects__title{
+.projects__title, .contact__title{
 	text-align: center;
 	width:100%;
 	color:#fff;
@@ -242,7 +243,7 @@ body{
 	z-index: 3;
 	font-size: 40px;
 }
-.projects__title::before{
+.projects__title::before, .contact__title::before{
 	content:'';
 	height: 3px;
 	background-color:#fff;
@@ -277,7 +278,8 @@ body{
 	width:100vw;
 }
 .projects__example__text{
-	margin:15px;
+	margin:15px auto;
+	padding: 0 15px;
 }
 .projects__example__title{
 	color:#FDD835;
@@ -290,36 +292,17 @@ body{
 	color:#fff;
 	font-size:20px;
 	margin:0;
+	text-align: center;
 }
 .contact{
+	padding-top:10px;
 	background:#FDD835;
-}
-.contact__title{
-	margin:0;
-	padding:30px 0;
-	width:100%;
-	text-align: center;
-	text-transform: uppercase;
-	font-size:40px;
-	position: relative;
-	z-index: 3;
-	color:white;
-}
-.contact__title::before{
-	content:'';
-	height: 3px;
-	background-color:#fff;
-	position: absolute;
-	z-index: -1;
-	top:50%;
-	left:15px;
-	right:15px;
 }
 .contact__title__span{
 	display: inline-block;
 	padding:0 5px;
 	background-color:#FDD835;
-	z-index: 1;
+	z-index: 1;	
 }
 .contact__content{
 	display: flex;
@@ -427,6 +410,7 @@ body{
 	.projects__example__photo{
 		max-width: 620px;
 		width:50vw;
+		margin: 0 10px;
 	}
 }
 }
