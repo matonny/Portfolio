@@ -223,8 +223,20 @@ body{
 	margin:15px;
 	font-size:24px;
 }
+.skills__item circle{
+	transition: 0.1s;
+}
+.skills__item ellipse, .skills__item:hover rect{
+	transition: 0.2s;
+}
 .skills__item:hover{
 	fill:#FDD835;
+}
+.skills__item:hover circle, .skills__item:hover rect{
+	fill:#FDD835;
+}
+.skills__item:hover ellipse{
+	stroke:#FDD835;
 }
 .projects{
 	background-color:black;
