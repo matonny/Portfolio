@@ -1,19 +1,3 @@
-// $('a[href*="#"]:not([href="#"])').click(function () {
-//     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-//         var target = $(this.hash);
-//         var id = this.hash.slice(1);
-//         target = target.length ? target : $('[name=' + id + ']');
-//         if (target.length) {
-//             $('html, body').animate({
-//                 scrollTop: target.offset().top
-//             }, 1000, function () {
-//                 location.hash = id;
-//             });
-//             return false;
-//         }
-//     }
-// });
-
 (function(){
 
     const openMenuButton = document.querySelector("#open-menu-button");
